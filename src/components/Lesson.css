@@ -1,0 +1,53 @@
+/* src/components/WebpageSection.css */
+
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif; /* Apply Lato font to the entire body */
+}
+
+.webpage-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.section {
+  flex-basis: 48%; /* Adjust the width of each section */
+  padding: 20px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #edf1fa; /* Lighter background for a modern look */
+}
+
+.section h2 {
+  color: #333; /* Dark grey color for headings */
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  font-weight: 700; /* Bold headings */
+}
+
+.section p {
+  color: #555; /* Slightly darker color for paragraphs */
+  line-height: 1.6; /* Spacing between lines */
+}
+
+/* Styling for the images */
+.section img {
+  display: block; /* Ensure images are displayed as block elements */
+  width: 100%; /* Make images take up the full width of the section */
+  height: auto; /* Keep the original aspect ratio */
+  margin-top: 20px; /* Space above the image */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .webpage-section {
+    flex-direction: column;
+  }
+
+  .section {
+    flex-basis: 100%; /* Set sections to full width on smaller screens */
+    margin-bottom: 20px; /* Increased margin between sections */
+  }
+}

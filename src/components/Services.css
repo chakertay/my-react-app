@@ -1,0 +1,96 @@
+
+/* src/components/Services.css */
+.services-section {
+  padding: 50px;
+  background-color: #edf1fa;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.services-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  font-family: 'Lato', sans-serif;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+.service-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.service-card.expanded {
+  height: auto;
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.card-title-details {
+  flex: 1;
+  font-family: 'Lato', sans-serif;
+}
+
+.card-title-details h3 {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.initial-details {
+  margin: 5px 0 10px;
+  font-size: 1rem;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+.card-header button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.card-header button:hover {
+  background-color: #0056b3;
+}
+
+.card-details {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+

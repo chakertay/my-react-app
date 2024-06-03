@@ -1,0 +1,80 @@
+/* src/components/About.css */
+
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.about-section {
+  display: flex;
+  padding: 50px;
+  background-color: #edf1fa; /* Slightly lighter background for modern look */
+  gap: 32px; /* Increased gap for better spacing */
+  flex-wrap: wrap; /* Flex wrap for better responsiveness */
+}
+
+.about-left, .about-right {
+  flex: 1 1 45%; /* Flex-grow, flex-shrink, flex-basis for responsive design */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centered content */
+  text-align: center; /* Centered text */
+}
+
+.about-left h2 {
+  font-size: 2rem;
+  color: #222; /* Slightly darker for better readability */
+  margin-bottom: 20px;
+  font-weight: 700; /* Bold text */
+}
+
+.about-left p {
+  font-size: 1rem;
+  color: #444; /* Improved readability */
+  margin-bottom: 20px;
+  line-height: 1.6; /* Better line height for readability */
+}
+
+.schedule-button {
+  padding: 12px 24px; /* Increased padding for better touch targets */
+  background-color: #bb0cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+  font-size: 1rem; /* Ensuring button text size is consistent */
+}
+
+.schedule-button:hover {
+  background-color: #820cb1;
+  transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+.about-right img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for modern look */
+}
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    padding: 30px; /* Reduced padding for smaller screens */
+  }
+  
+  .about-left, .about-right {
+    flex: 1 1 100%;
+  }
+
+  .about-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-left p {
+    font-size: 1rem;
+  }
+}

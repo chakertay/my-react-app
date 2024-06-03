@@ -1,0 +1,88 @@
+/* src/components/Pricing.css */
+
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif; /* Apply Lato font to the entire body */
+}
+
+.pricing-section {
+  padding: 50px;
+  background-color: #edf1fa; /* Lighter background for a modern look */
+  text-align: center;
+}
+
+.pricing-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 0 20px;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-header {
+  margin-bottom: 20px;
+}
+
+.pricing-header h3 {
+  font-size: 2rem; /* Increased font size for pricing titles */
+  margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+.pricing-header p {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  margin-bottom: 15px; /* Increased margin for better spacing */
+}
+
+.start-button {
+  padding: 12px 24px; /* Increased padding for better touch targets */
+  background-color: #bb0cff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #820cb1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    gap: 30px; /* Increased gap between pricing cards */
+  }
+}

@@ -1,0 +1,72 @@
+/* src/components/FAQ.css */
+
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif; /* Apply Lato font to the entire body */
+}
+
+.faq-section {
+  padding: 50px;
+  background-color: #edf1fa; /* Lighter background for a modern look */
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  font-weight: 700; /* Bold section heading */
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0; /* Increased margin for better spacing */
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-5px);
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333; /* Darker text color for better contrast */
+  margin-bottom: 10px; /* Increased margin for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  min-width: 100%;
+  display: flex;
+  align-items: start;
+  line-height: 1.6; /* Improved line height for readability */
+}

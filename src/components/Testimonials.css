@@ -1,0 +1,90 @@
+/* src/components/Testimonials.css */
+
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif; /* Apply Lato font to the entire body */
+}
+
+.testimonials-section {
+  padding: 50px;
+  background-color: #edf1fa; /* Lighter background for a modern look */
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+.highlighted-text {
+  color: #007bff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 40px; /* Increased margin for better spacing */
+}
+
+.testimonials-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Increased padding for better spacing */
+  flex: 1;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  color: #555; /* Adjusted color for better readability */
+}
+
+.testimonial-author {
+  font-style: italic;
+  color: #888; /* Adjusted color for better readability */
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #0056b3;
+}
+
+.nav-button:first-child {
+  left: 10px;
+}
+
+.nav-button:last-child {
+  right: 10px;
+}
+
+
+
+
+
+

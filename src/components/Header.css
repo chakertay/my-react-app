@@ -1,0 +1,58 @@
+/* src/components/Header.css */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #edf1fa;
+  font-family: 'Lato', sans-serif; /* Add Lato font here */
+}
+
+.logo img {
+  width: 80px; /* Set the desired width */
+  height: auto; /* Adjust height proportionally */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif; /* Add Lato font here */
+}
+
+.schedule-button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Lato', sans-serif; /* Add Lato font here */
+}
+
+.schedule-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
